@@ -1,0 +1,32 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "standard"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+        "prettier/prettier": "warn",
+        "no-unused-vars": "warn",
+        "indent": ["warn", 4],
+        "quotes": "warn",
+        "space-before-function-paren": "warn",
+        "eol-last": "warn",
+        "semi": ["warn", "never"],
+        "no-trailing-spaces": ["warn"],
+        "max-len": [
+            "warn",
+            { 
+                "code": 120,
+                "ignoreStrings": true
+            }
+        ],
+        "camelcase": "warn"
+    }
+}
