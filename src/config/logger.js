@@ -1,9 +1,9 @@
-import { createLogger, transports } from 'winston'
-import { LOGGER_LEVEL, IS_TEST } from './index'
+import winston from 'winston'
+import { LOGGER_LEVEL, IS_TEST } from './index.js'
 
-const winstonLogger = createLogger({
+const winstonLogger = winston.createLogger({
     transports: [
-        new transports.Console({
+        new winston.transports.Console({
             level: LOGGER_LEVEL || 'info',
             silent: IS_TEST
         })

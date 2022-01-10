@@ -1,4 +1,4 @@
-import app from './config/express'
+import app from './config/express.js'
 
 const port = 3333
 

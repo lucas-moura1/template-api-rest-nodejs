@@ -1,8 +1,8 @@
 import express from 'express'
 import cors from 'cors'
 
-import loggerMiddleware from '../middlewares/logger'
-import routes from '../routes/index'
+import loggerMiddleware from '../middlewares/logger.js'
+import routes from '../routes/index.js'
 
 const app = express()
 

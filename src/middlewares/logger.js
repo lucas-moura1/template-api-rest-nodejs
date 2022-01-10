@@ -1,4 +1,4 @@
-import logger from '../config/logger'
+import logger from '../config/logger.js'
 import { v4 as uuidV4 } from 'uuid'
 
 const loggerMiddleware = (req, res, next) => {
